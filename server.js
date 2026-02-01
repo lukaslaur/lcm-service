@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Helper functions
 function isNaturalNumber(str) {
     const num = Number(str);
     return Number.isInteger(num) && num >= 1;
