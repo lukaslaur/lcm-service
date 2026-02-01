@@ -25,11 +25,9 @@ function transformEmail(email) {
     return email.replace(/[^a-zA-Z0-9]/g, '_');
 }
 
-// REPLACE THIS WITH YOUR ACTUAL EMAIL
 const myEmail = "lukaslaurinait@gmail.com";
 const emailPath = transformEmail(myEmail);
 
-// The endpoint
 app.get(`/${emailPath}/lcm`, (req, res) => {
     const x = req.query.x;
     const y = req.query.y;
